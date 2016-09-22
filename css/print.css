@@ -7,7 +7,11 @@ body {
     height: 100%;
     font-size: 8pt;
 }
-
+p {
+    font-size: 10pt;
+    line-height: 1em;
+    font-weight: 400;
+}
 h1 {
     font-size: 16pt;
 }
@@ -45,8 +49,6 @@ h5 {
     width: 15%;
     height: auto;
 }
-
-
 
 .m4print {
     width: 33.3333333333% !important;
