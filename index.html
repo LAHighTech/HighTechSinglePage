@@ -7,8 +7,9 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection,print" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection,print" />
+    <link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
 </head>
 <body>
 
@@ -19,14 +20,14 @@
                 <div id="header-logo" class="row">
                     &nbsp;<br />&nbsp;<br />&nbsp;<br />
                     <div class="center header">
-                        <img src="images/HighTechLogo-white.png" class="responsive-img" alt="Los Angeles High Tech logo" width="450" height="120"/>
+                        <img src="images/HighTechLogo-white.png" id="laht-logo"class="responsive-img" alt="Los Angeles High Tech logo" width="450" height="120"/>
                     </div>
-                    <h2 class="header center blue-text">Bridge &amp; Coding Boot Camp</h2>
                     <div class="row center">
+                        <h2 class="header center blue-text">Bridge &amp; Coding Boot Camp</h2>
                         <h5 class="header col s12 light">Sponsored by CCCCO Industry-Driven Regional Collaborative</h5>
                     </div>
                     <div class="row center">
-                        <img src="images/html-css-js-logos-600-white.png" class="waves-effect waves-light responsive-img" width="300" height="176">
+                        <img src="images/html-css-js-logos-600-white.png" id="html-css-js" class="responsive-img" width="300" height="176">
                     </div>
                     <br><br>
                 </div>
@@ -41,7 +42,7 @@
             <!--   Icon Section   -->
             <div class="row">
                 <h1 class="center">LA High Tech Bridge &amp; Coding Boot Camp</h1>
-                <div class="sl12">
+                <div class="s12">
                     <p>
                         The Bridge to Coding training is comprised of a two-week session where students are prepared to enter the Coding Boot Camp. Students will be exposed
                         to important aspects of being a new employee that includes: Workplace Success, Shining as a New Employee, Oral and Written Communication for the IT office environment,
@@ -49,13 +50,13 @@
                         into job openings in the Information and Communication Technologies (ICT) industry. Training in the LA High Tech Bridge &amp; Coding Boot Camp includes a 1-day paid internship!
                     </p>
                 </div>
-                <div class="s12 center">
+                <div id="student-img"class="s12 center">
                     <img class="responsive-img z-depth-3" src="images/students2.jpg" alt="Students hard at work">
                 </div>
 
-                <div class="col s12 m6">
+                <div class="col s12 m4 m4print">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">assignment</i></h2>
+                        <h2 class="center brown-text"><i class="material-icons">list</i></h2>
                         <h5 class="center">Eligibility Requirements</h5>
                             <ul class="browser-default">
                                 <li>18 years or older</li>
@@ -63,17 +64,34 @@
                                 <li>Completed college level Math</li>
                                 <li>Completed basic computer literacy</li>
                             </ul>
-                        <p style="font-size:15px; line-height: 1.5em;">
+                        <!--<p style="font-size:15px; line-height: 1.5em;">-->
+                        <p class="light">
                             Each area must be completed with a Grade "C" or better or assessed @ 70% or higher.<br />
                             Verification of Eligibility Completions are required for registration and enrollment!
                         </p>
                     </div>
                 </div>
-
-                <div class="col s12 m6">
+                <div class="col s12 m4 m4print">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">verified_user</i></h2>
-                        <h5 class="center">BootCamp Skills</h5>
+                        <h2 class="center brown-text"><i class="material-icons">equalizer</i></h2>
+                        <h5 class="center">Bridge Skills</h5>
+                        <p class="light">
+                            <ul class="browser-default">
+                                <li> Exposure to Critical Aspects as a New Employee in the IT space</li>
+                                <li>Learn about Workplace Success</li>
+                                <li>Develop Oral/Written Communication Skills for the IT Office</li>
+                                <li>Hone Skills in Workplace Behavior</li>
+                                <li>Develop Emotional Intelligence</li>
+                                <li>Develop Cultural Diversity</li>
+                                <li>Develop Interview Skills</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4 m4print">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+                        <h5 class="center">Coding Skills</h5>
                         <p class="light">
                             Students completing the Coding BootCamp  will be able to:
                             <ul class="browser-default">
@@ -91,7 +109,7 @@
     </div>
 
     <!-- Paralax 2 Section-->
-    <div class="parallax-container valign-wrapper">
+    <div class="parallax-container valign-wrapper parallax-no-height">
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center" style="background-color: rgba(0,0,0,.8); border-radius: 10px;">
